@@ -1,3 +1,17 @@
+<nav>
+  <ul>
+    <li>
+      <a [routerLink]="['home']"> Home </a>
+    </li>
+    <li>
+      <a [routerLink]="['movie', 1]"> MovieDetails </a>
+    </li>
+  </ul>
+</nav>
+
+
 <h1>
   {{title}}
 </h1>
+
+<router-outlet></router-outlet>
