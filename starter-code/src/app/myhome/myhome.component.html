@@ -1,6 +1,6 @@
-<p>
-  myhome works!
-</p>
+<h2>
+  CINEMA'S ROOMS
+</h2>
 <div *ngFor='let m of movies'>
   <h2>ROOM {{m.id}}</h2>
   <a [routerLink]="['/movie/',m.id]"><img src="{{m.poster}}" alt=""></a>

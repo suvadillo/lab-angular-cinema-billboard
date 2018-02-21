@@ -1,3 +1,17 @@
+<h2>ROOM {{myMovie.id}}</h2>
+<img src="{{myMovie.poster}}" alt="">
+<h3>{{myMovie.title}}</h3>
 <p>
-  mymovie works!
+  <b>Synopsis: </b>{{myMovie.synopsis}}</p>
+<p><b>Genres:</b>
+  <span *ngFor='let g of myMovie.genres'>
+    <span>{{g}} </span>
+  </span>
 </p>
+<p>
+  <b>Director: </b>{{myMovie.director}}</p>
+<p><b>Year: </b>{{myMovie.year}}</p>
+<p><b>Actors:</b></p>
+<ul *ngFor='let a of myMovie.actors'>
+  <li>{{a}}</li>
+</ul>

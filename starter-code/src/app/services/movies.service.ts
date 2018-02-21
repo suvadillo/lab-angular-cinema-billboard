@@ -10,8 +10,10 @@ export class MoviesService {
         return this.movies;
     }
     getMovie(id): any {
+        let match = {};
         this.movies.forEach( m => {
-           if (m['id'] === id) { return m; }
+           if (m['id'] === id) { match = m; }
         });
+        return match;
     }
 }
